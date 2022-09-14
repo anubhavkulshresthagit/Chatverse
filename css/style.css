@@ -1,0 +1,72 @@
+.heading{
+    color: rgb(6, 151, 235);
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.container{
+    background-color: aquamarine;
+    width: 1300px;
+    height: 600px;
+    display: block;
+    margin: auto;
+    border: 1px black;
+    border-radius: 10px;
+}   
+
+.chat-section{
+    height: 85%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.send-section{
+    height: 15%;
+    width: 100%;
+    
+}
+
+.message{
+    background-color: bisque;
+    width: 24%;
+    padding: 10px;
+    margin: 17px 12px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.left{
+    float: left;
+    clear: both;
+}
+
+.right{
+    float: right;
+    clear: both;
+}
+
+#send-container{
+    width: 90%;
+    display: block;
+    margin: auto;
+    height: 60px;
+}
+
+#messageInp{
+    width: 60%;
+    height: 90%;
+    margin-left: 15%;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.btn{
+    height: 40px;
+    width: 50px;
+    font-size: 18px;
+    background-color:rgb(128, 192, 230);
+    border-radius: 10px;
+    border: 2px solid black;
+}
+    
