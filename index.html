@@ -7,22 +7,54 @@
     <title>Chat Application (Node Server)</title>
     <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
     <script defer src="js/client.js"></script>
-    <link rel="stylesheet" href="css/style.css">
     
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/f8f6aca59b.js" crossorigin="anonymous"></script>
   </head>
-  <body>
-	<h1 class="heading">Messenger</h1>
+  <body class="body">
+	<h1 class="heading">ChatVerse</h1>
     <div class="container">
         <div class="chat-section">
             <div class="message right">Hello Utkarsh</div>
             <div class="message left">Hello Anubhav</div>
         </div>
         <div class="send-section">
+
+          <div class="formating">
+            <div class="flex-container">
+              <button id="bold" class="option-button format" ><i class="fa-solid fa-bold"></i></button>
+              <button id="italic" class="option-button format"><i class="fa fa-italic" aria-hidden="true"></i></button>
+              <button id="strikethrough" class="option-button format"><i class="fa fa-strikethrough" aria-hidden="true"></i></button>
+              <!--{% comment %} <div><button id="createlink" class="adv-option-button"><i class="fa-solid fa-link"></i></button></div>
+              <div><button id="insertUnorderedList" class="option-button"><i class="fa fa-list-ul" aria-hidden="true"></i></button></div>
+              <div><button id="insertOrderedList" class="option-button"><i class="fa fa-list-ol" aria-hidden="true"></i></button></div>
+              <div><button id="justifyLeft" class="option-button align"><i class="fa fa-align-left" aria-hidden="true"></i></i></button></div>
+              <div><button id="bold" class="option-button format"><i class="fa fa-code" aria-hidden="true"></i></i></button></div> -->
+            </div>
+          </div>
+
+          <!--<div id="text-input" contenteditable="true"></div>-->
+
+          <div class="type">
             <form action="#" id="send-container">
-                <input type="text" name="messageInp" id="messageInp">
-                <button class="btn" type="submit">Send</button>
+              <div id="messageInp" name="messageInp" placeholder="Chat comes here..." contenteditable="true"></div>
+              <!--<button class="btn" type="submit">Send</button>-->
             </form>
+          </div>
+
+          <div class="emoji">
+            <div class="flex-container2">
+            <!--  <div><button id="bold" class="option-button-format"><i class="fa fa-plus-circle" aria-hidden="true"></i></button></div>
+              <div><button id="bold" class="option-button-format"><i class="fa fa-smile-o" aria-hidden="true"></i></button></div>
+              <div style="margin-bottom:5px;"><button id="bold" class="option-button-format"><b>@</b></button></div> -->
+            </div>
+          </div>
+
         </div>
    </div>
+   <script defer src="js/editor.js"></script>
   </body>
 </html>
+
